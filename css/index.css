@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(40,42,55); 
+    color: rgb(138,118,131); 
+    font-size: 20px;   
+}
+
+
+h1{
+    color: rgb(191, 118, 165); 
+    font-size: 40px;
+}
+
+
+h2{
+    color: rgb(117,174,185); 
+    font-size: 25px;
+}
+
+li{
+    a:hover {
+        color: hotpink;
+      }
+}
+
+footer{
+    background-color: rgb(138,118,131);
+    color: rgb(40,42,55);
+    font-size: 18px;
+}
+/*
+.box {
+background-image: url(../images/standing_girl.jpg);
+width: 1200px;
+margin: 20px;
+padding: 150px;
+
+background-repeat: no-repeat;
+}
+*/
+
+.box{
+    background-color: rgb(40,42,55); 
+    width: 1000px;
+    margin: 5px;
+    padding: 5px;
+}
