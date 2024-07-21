@@ -1,7 +1,14 @@
+* { line-height: 1.5;
+
+}
+
 body {
     background-color: rgb(222,195,224);
     color: rgb(0,0,0); 
-    font-size: 20px;   
+    font-size: 20px;  
+    p.normal {
+        font-weight: normal;
+      } 
     margin: 0;
 
 }
@@ -64,5 +71,6 @@ footer{
     background-color: rgb(159, 77, 137);
     color: rgb(40,42,55);
     font-size: 18px;
+    text-align: center;
     
 }
