@@ -1,0 +1,89 @@
+/* a link to a font for h1*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sevillana&display=swap');
+
+* { 
+  line-height: 1.5;
+}
+
+body {
+    background-color: rgb(222,195,224);
+    color: rgb(0,0,0); 
+    font-family: "Times New Roman", serif;
+    font-size: 20px;  
+    p.normal {
+        font-weight: normal;
+      } 
+      margin: 0 auto;
+}
+ 
+ .container {
+    background-color: rgb(159, 77, 137);
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container a {
+    float: right;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+/* Change the color of links on hover */
+  .container a:hover {
+    background-color: rgb(255, 105, 180);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .container a.active {
+    background-color: rgb(113,55,98);
+    color: rgb(255, 105, 180);
+  }
+
+.nav {
+    float: left;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: rgb(159, 77, 137); 
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;   
+    margin: 10px;
+}
+
+h2 {
+    color: rgb(126, 92, 129); 
+    size: 25px;
+}
+
+.ticker {
+  color: rgb(159, 77, 137);
+  font-family: Lucida Handwriting;
+  font-size: 25px;
+  width: 50%;
+  height: 40px; 
+  margin: 0;
+}
+
+ul {
+    a:hover {
+        color: rgb(255, 105, 180);
+      }
+      
+}
+
+footer {
+    background-color: rgb(159, 77, 137);
+    color: rgb(40,42,55);
+    font-size: 18px;
+    text-align: center;   
+}
