@@ -1,16 +1,19 @@
-* { line-height: 1.5;
+/* a link to a font for h1*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sevillana&display=swap');
 
+* { 
+  line-height: 1.5;
 }
 
 body {
     background-color: rgb(222,195,224);
     color: rgb(0,0,0); 
+    font-family: "Times New Roman", serif;
     font-size: 20px;  
     p.normal {
         font-weight: normal;
       } 
-    margin: 0;
-
+      margin: 0 auto;
 }
  
  .container {
@@ -21,7 +24,7 @@ body {
   }
 
   .container a {
-    float: left;
+    float: right;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
@@ -41,7 +44,6 @@ body {
     color: rgb(255, 105, 180);
   }
 
-
 .nav {
     float: left;
 }
@@ -51,26 +53,37 @@ body {
     justify-content: space-between;
 }
 
-h1, h2{
+h1 {
+    color: rgb(159, 77, 137); 
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;   
+    margin: 10px;
+}
+
+h2 {
     color: rgb(126, 92, 129); 
-    font-size: 40px;
+    size: 25px;
 }
 
-
-h2{
-    font-size: 25px;
+.ticker {
+  color: rgb(159, 77, 137);
+  font-family: Lucida Handwriting;
+  font-size: 25px;
+  width: 50%;
+  height: 40px; 
+  margin: 0;
 }
 
-li{
+ul {
     a:hover {
         color: rgb(255, 105, 180);
       }
+      list-style-image: url('sqpurple.gif');
 }
 
-footer{
+footer {
     background-color: rgb(159, 77, 137);
     color: rgb(40,42,55);
     font-size: 18px;
-    text-align: center;
-    
+    text-align: center;   
 }
