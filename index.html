@@ -6,14 +6,16 @@
     <meta name="author"content="Elena Nam">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Elena Nam portfolio</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src = "js/index.js"></script>
+    <title> Elena Nam portfolio </title>
 </head>
 
 <body>
     <main>
-    <header>
-            <div class="container">
+        <header>
+            <div class ="container-nav">
+                <a href="#" class="logo"> Logo </a>
                 <nav>
                 <a href="#leave_a_message"><strong> Leave a Message</strong></a>
                 <a href="#connect"><strong> Connect </strong></a>
@@ -24,59 +26,96 @@
                 <a class="active" href="#home"><strong> Home </strong></a> 
                 </nav>
             </div> 
-    </header>
+        </header>
 
         <h1> Elena Nam </h1>
         
-            <div class ="ticker">
-                <marquee>
-                    <p><strong> If you can dream it, you can do it </strong></p>
-                </marquee>
-            </div>
+        <div class ="ticker">
+            <marquee>
+            <p><strong> If you can dream it, you can do it </strong></p>
+            </marquee>
+        </div>
 
-    <section id="about">
-        <h2><em> About: </em></h2> 
-        <p> I am a teacher and learner. I am currently developing my skills on web development.</p>
-    </section>
+        <div class ="container">
+            <section id ="about">
+                <h2><em> About: </em></h2> 
+                <p> I am a teacher and learner. I am currently developing my skills on web development.</p>
+            </section>
+        </div>
 
-    <section id="experience">
-        <h2><em> Experience: </em></h2>
-        <ul>
-         <li> "TJX", USA </li>
-         <li>"Miru Mir" educational center, Uzbekistan </li> 
-         <li>"Miru Mir" educational center, Uzbekistan </li> 
-         <li>"Hansung", automobile factory, South Korea </li>
-         <li>"Variant Optima", advertising agency, Uzbekistan </li>
-         <li> Secondary school 33, Uzbekistan </li>
-         </ul> 
-    </section> 
+        <div class ="container">
+            <section id ="experience">
+                <h2><em> Experience: </em></h2>
+                    <div class ="tjx">
+                    <p> "TJX", USA </p>
+                    </div> 
+                    <div class ="miru-mir">
+                    <p> "Miru Mir", Uzbekistan </p>
+                    </div>
+                    <div class ="alter-ego">
+                    <p> "Alter Ego", Uzbekistan </p>
+                    </div>
+                    <div class ="hansung">
+                    <p> "Hansung", South Korea </p>
+                    </div>
+                    <div class ="variant-optima">
+                    <p> "Variant Optima", Uzbekistan </p>
+                    </div>
+                    <div class ="school-33">
+                    <p> Secondary school 33, Uzbekistan </p>
+                    </div>
+            </section> 
+        </div>
 
-    <section id="skills">
-        <h2><em> Skills </em></h2>
-    </section>
-     
-    <section id="projects">
-        <h2><em> Projects </em></h2>
-    </section>
+        <div class ="container">
+            <section id ="skills">
+                <h2><em> Skills </em></h2>
+            </section>
+        </div>
 
-    <section id="connect">
-        <h2><em> Connect: </em></h2>
-        <ul>
-            <li>
-                <i class="fa fa-github" style="font-size:24px"></i>
-                 <a href = "https://github.com/Elena-Nam" target="_blank"> <strong> GitHub </strong> </a><br>
-             </li>
-             <li>
-                <i class="fa fa-envelope-o" style="font-size:20px"></i>
-                <a href = "mailto:ek28150@gmail.com" target="_blank"> <strong> Email me </strong> </a> 
-            </li>
-        </ul>
-    </section>
+        <div class ="container">
+            <section id ="projects">
+                <h2><em> Projects </em></h2>
+            </section>
+        </div>
 
-    <section id="leave_a_message">
-        <h2><em> Leave a Message </em></h2>
-    </section>
+        <div class ="container">
+            <section id ="connect">
+                <h2><em> Connect: </em></h2>
+                <ul>
+                <li>
+                    <i class="fa fa-github" style="font-size:24px"></i>
+                    <a href = "https://github.com/Elena-Nam" target="_blank"> <strong> GitHub </strong> </a>
+                </li>
+                <li>
+                    <i class="fa fa-envelope-o" style="font-size:20px"></i>
+                    <a href = "mailto:ek28150@gmail.com" target="_blank"> <strong> Email me </strong> </a> 
+                </li>
+                </ul>
+            </section>
+        </div>
+.
+            <section id ="leave_a_message">
+                <h2><em> Leave a Message </em></h2>
+                <div class ="container">
+                    <form action="action_page.php">
+                    <label for="name"> Name </label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
 
+                    <label for="email"> Email </label>
+                    <input type="text" id="email" name="email" placeholder="Your email address..">
+
+                    <label for="message"> Message </label>
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+        
+
+    <button class= "btn"><strong> Top </strong></button>
+    
     </main>  
 
     <footer> Copyright &copy; 2024 by Elena Nam </footer>
