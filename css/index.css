@@ -3,45 +3,67 @@
 
 * { 
   line-height: 1.5;
+  
 }
 
 body {
-    background-color: rgb(222,195,224);
-    color: rgb(0,0,0); 
+    background-color: rgb(222, 195, 224);
+    color: rgb(0, 0, 0); 
     font-family: "Times New Roman", serif;
     font-size: 20px;  
     p.normal {
         font-weight: normal;
       } 
-      margin: 0 auto;
+      margin: 0 auto;    
 }
- 
- .container {
+
+h1 {
+  color: rgb(159, 77, 137); 
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;  
+  font-weight: 900; 
+  margin: 10px;
+  margin-left: 30px;
+  margin-bottom: -20px;
+}
+
+h2 {
+  color: rgb(126, 92, 129); 
+  size: 25px;
+  font-weight: bold; 
+}
+
+p {
+letter-spacing: 1.2px;
+}
+
+
+ /* navigation bar*/
+.container-nav {
     background-color: rgb(159, 77, 137);
     overflow: hidden;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;   
   }
 
-  .container a {
+.container-nav a {
     float: right;
     color: rgb(0, 0, 0);
+    letter-spacing: 1px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 20px; 
   }
 
-/* Change the color of links on hover */
-  .container a:hover {
-    background-color: rgb(255, 105, 180);
-    color: black;
+.container-nav a:hover {
+    background-color: rgb(255, 105, 180); /* Change the color of links on hover */
+    color: rgb(0, 0, 0);
   }
   
-  /* Add a color to the active/current link */
-  .container a.active {
-    background-color: rgb(113,55,98);
-    color: rgb(255, 105, 180);
+.container-nav a.active {
+    background-color: rgb(113, 55, 98);
+    color: rgb(255, 105, 180);  /* Add a color to the active/current link */
   }
 
 .nav {
@@ -53,37 +75,124 @@ body {
     justify-content: space-between;
 }
 
-h1 {
-    color: rgb(159, 77, 137); 
-    font-family: "Dancing Script", cursive;
-    font-size: 60px;   
-    margin: 10px;
+
+/* logo */
+header .logo {
+  float: left;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(255, 105, 180);
+  text-decoration: none;
+  letter-spacing: 2px;
 }
 
-h2 {
-    color: rgb(126, 92, 129); 
-    size: 25px;
-}
 
+/* ticker */
 .ticker {
   color: rgb(159, 77, 137);
   font-family: Lucida Handwriting;
   font-size: 25px;
   width: 50%;
   height: 40px; 
-  margin: 0;
+  padding: 10px;
+  margin-bottom: 30px; 
+}
+
+#experience div:hover {
+  font-size: 22px; /* Change the size of the font on hover */
+}
+  
+section {
+  margin-left: 40px;
+}
+
+section div {
+  border-radius: 5px;
+  padding: 0 20px;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: -10px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(185, 159, 187);
+  width: 45%;
 }
 
 ul {
     a:hover {
         color: rgb(255, 105, 180);
       }
-      
+    list-style-type: none;       
 }
 
+
+/* leave a message section */
+#leave_a_message {
+  border-radius: 5px;
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding:12px; 
+  border: 1px solid rgb(222, 195, 224); 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* submit button */
+input[type=submit] {
+  background-color: rgb(159, 77, 137);
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button,the background color changes pink */
+input[type=submit]:hover {
+  background-color: rgb(255, 105, 180); 
+}
+
+
+/* top button */
+.btn {
+  border: none;
+  background-color: rgb(159, 77, 137);
+  padding: 5px 10px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: relative;
+  left: 100%;
+  transform: translateX(-190%);
+  text-align: right;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.btn:hover { 
+  background: rgb(255, 105, 180); /* On mouse-over */
+}
+
+
+/*footer*/
 footer {
     background-color: rgb(159, 77, 137);
     color: rgb(40,42,55);
     font-size: 18px;
     text-align: center;   
 }
+
