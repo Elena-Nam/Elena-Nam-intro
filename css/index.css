@@ -10,7 +10,7 @@ body {
     background-color: rgb(222, 195, 224);
     color: rgb(0, 0, 0); 
     font-family: "Times New Roman", serif;
-    font-size: 20px;  
+    font-size: 1.25em;  
     p.normal {
         font-weight: normal;
       } 
@@ -42,8 +42,10 @@ letter-spacing: 1.2px;
 .container-nav {
     background-color: rgb(159, 77, 137);
     overflow: hidden;
-    width: 100%;
+   /* width: 100%;*/
     margin: 0 auto;   
+    position: sticky;
+    top: 0;
   }
 
 .container-nav a {
@@ -54,6 +56,7 @@ letter-spacing: 1.2px;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px; 
+    
   }
 
 .container-nav a:hover {
@@ -64,11 +67,8 @@ letter-spacing: 1.2px;
 .container-nav a.active {
     background-color: rgb(113, 55, 98);
     color: rgb(255, 105, 180);  /* Add a color to the active/current link */
+    
   }
-
-.nav {
-    float: left;
-}
 
 .navigation-links {
     display: flex;
@@ -102,7 +102,12 @@ header .logo {
 #experience div:hover {
   font-size: 22px; /* Change the size of the font on hover */
 }
+
+#experience {
+  display: flex;
   
+}
+
 section {
   margin-left: 40px;
 }
@@ -195,4 +200,3 @@ footer {
     font-size: 18px;
     text-align: center;   
 }
-
